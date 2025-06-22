@@ -1,11 +1,13 @@
 {
- "version": 3,
+  "version": 3,
   "routes": [
     { "src": "/hello", "dest": "/api/index.js" },
     { "src": "/", "dest": "/api/index.js" }
   ],
-   "rewrites": [{
-        "source": "/(.*)",
-        "destination": "/api"
-    }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/index.js"
+    }
+  ]
 }
